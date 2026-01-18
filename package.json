@@ -8,9 +8,9 @@
     "cct": "cli-tool/bin/create-claude-config.js"
   },
   "scripts": {
-    "dev": "vercel dev",
-    "build": "echo 'Build complete'",
-    "start": "vercel dev",
+    "dev": "node init && vercel dev",
+    "build": "node init && echo 'Build complete'",
+    "start": "node init && vercel dev",
     "test": "echo 'No tests specified'",
     "agent:security-auditor": "security-auditor 'Security audit covering codebase, dependencies, and deployment configuration'",
     "discord:register": "node api/discord/register-commands.cjs"
